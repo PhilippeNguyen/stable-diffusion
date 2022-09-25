@@ -35,7 +35,7 @@ class FolderData(Dataset):
         caption = self.captions[chosen]
         if caption is None:
             caption = "old book illustration"
-        return {"jpg": im, "txt": caption}
+        return {"image": im, "txt": caption}
 
     def process_im(self, im):
         im = im.convert("RGB")
